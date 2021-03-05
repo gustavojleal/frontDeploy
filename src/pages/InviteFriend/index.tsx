@@ -91,7 +91,7 @@ const InviteFriend: React.FC = () => {
         setLoading(false);
       }
     },
-    [addToast],
+    [addToast, user.name],
   );
 
   return (

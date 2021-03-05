@@ -44,7 +44,6 @@ const CreateNewAccount: React.FC = () => {
         await schema.validate(data, {
           abortEarly: false,
         });
-        console.log(data)
 
         await api.post('/createNewAccount', {
           email: data.email,
